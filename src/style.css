@@ -7,23 +7,36 @@
 body {
   min-height: 100vh;
   font-family: sans-serif;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: [row1-start] 25% [row-end] 60% [third-line] auto [last-line];
+  grid-template-areas: 
+                'header header header header'
+                'nav main main main'
+                'footer footer footer footer';
 }
 body > * {
   min-height: 1em;
 }
 header {
   background: cyan;
+  
+  grid-area: header;
 }
 header > h1 {
   margin: 0;
 }
 nav {
   background: magenta;
+  grid-area: nav;
 }
 main {
   background: yellow;
+  grid-area: main;
 }
 footer {
   background: black;
   color: white;
+  grid-area: footer;
 }
