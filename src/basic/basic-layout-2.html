@@ -6,6 +6,10 @@
     <title>Basic Layout 2</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
+      /* 1. body display grid gegeven waardoor de header, nav, main en footer in een grid komen te staan
+      2. grid temp kolommen gemaakt van 4 en een fraction van 1fr gegeven 
+      3. grid temp rijen met de 1ste grid een waarde van 1fr, 2de 0.5fr, 3de 2fr en de laatste 0.8fr
+      4. grid template areas met 4 rijen en 4 kolommen van header, nav, main en footer*/
       body{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -18,21 +22,29 @@
         ;
       }
 
+      /* 1. header achtergrond kleur van cyan 
+        2. grid area oproepen en manipuleren met grid area  */
       header{
         background-color: cyan;
         grid-area: header;
       }
 
+      /* 1 nav een achtergrond kleur van magenta
+        2. grid area oproepen en manipuleren met grid area  */
       nav{
         background-color: magenta;
         grid-area: nav;
       }
 
+      /* 1 main een achtergrond kleur van yellow
+        2. grid area oproepen en manipuleren met grid area  */
       main{
         background-color: yellow;
         grid-area: main;
       }
 
+      /* 1 Footer een achtergrond kleur van zwart
+        2. grid area oproepen en manipuleren met grid area  */
       footer{
         background-color: black;
         grid-area: footer;

@@ -8,29 +8,42 @@
     <style>
       body{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 0.3fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-        'nav nav nav nav'
-        'header header header header'
-        'main main main main'
-        'footer footer footer footer'
+        ". . . . ."
+        ". header header header ."
+        ". nav nav nav ."
+        ". main main main ."
+        ". footer footer footer ."
         ;
+
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
 
       }
 
+      
       nav{
-        transform: rotate(45deg);
-        width: 100px;
-        justify-items: center;
+        transform: rotate(-30deg);
+        /* justify-items: center;
+        transform-origin: center; */
         grid-area: nav;
       }
 
       header{
-        transform: rotate(-45deg);
-        width: 100px;
-        justify-items: center;
+        transform: rotate(30deg);
+        /* justify-items: center;
+        transform-origin: center; */
         grid-area: header;
+      }
+
+      main{
+        grid-area: main;
+      }
+
+      footer{
+        grid-area: footer;
       }
     </style>
   </head>

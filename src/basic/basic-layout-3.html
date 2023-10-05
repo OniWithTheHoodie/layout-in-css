@@ -6,6 +6,11 @@
     <title>Basic Layout 3</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
+
+      /* 1. header, nav, main en footer in een grid gezet
+        2. 2 grid kolommen gemaakt met een fraction van 1fr 
+        3. grid rijen gemaakt met de 1ste met een fraction van 2fr en de 2de en 3de rij 0.5fr 
+        4. grid template areas met 3 rijen en 2 kolommen van main, footer, head en nav*/
       body{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -17,18 +22,24 @@
         ;
       }
 
+     /* 
+       grid area oproepen en manipuleren met grid area  */
       header{
         grid-area: header;
       }
 
+      /*  grid area oproepen en manipuleren met grid area  */
       nav{
         grid-area: nav;
       }
 
+      /* 
+        grid area oproepen en manipuleren met grid area  */
       main{
         grid-area: main;
       }
-
+      
+      /* grid area oproepen en manipuleren met grid area  */
       footer{
         grid-area: footer;
       }

@@ -4,6 +4,12 @@
 :root {
   font-size: min(calc(1em + 1vw), 4em);
 }
+/* 1. heb ik een viewheight van 100 gegeven
+2. font family van san-serif is een type tekst
+3. heb ik de header, nav, main en footer die in de body zitten in een grid geplaatst
+4. een gap van 20px geeft ruimte rond om de content
+5. grid temp colommen van van 4 met fractions van 1fr
+6. grid temp rows begin row 1 een start van 25% gegeven, einde van de row 60% en de derde lijn auto gegeven wat 100% is tot aan de laaste lijn */
 body {
   min-height: 100vh;
   font-family: sans-serif;
@@ -16,25 +22,40 @@ body {
                 'nav main main main'
                 'footer footer footer footer';
 }
+/* alles in de body in minimale hoogte van 1em */
 body > * {
   min-height: 1em;
 }
+
+/* 1. header achtergrond kleur van cyan 
+2. grid area oproepen en manipuleren met grid area  */
 header {
   background: cyan;
   
   grid-area: header;
 }
+/* 1. h1 in de header een margin van 0 haalt ruimte erom heen weg en zet het meer aan de rand*/
 header > h1 {
   margin: 0;
 }
+
+/* 1 nav een achtergrond kleur van magenta
+2. grid area oproepen en manipuleren met grid area  */
 nav {
   background: magenta;
   grid-area: nav;
 }
+
+/* 1 nav een achtergrond kleur van yellow
+2. grid area oproepen en manipuleren met grid area  */
 main {
   background: yellow;
   grid-area: main;
 }
+
+/* 1 nav een achtergrond kleur van zwart
+  2. text kleur wit
+3. grid area oproepen en manipuleren met grid area  */
 footer {
   background: black;
   color: white;
